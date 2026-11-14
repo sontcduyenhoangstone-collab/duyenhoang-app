@@ -29,6 +29,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
+      - run: mkdir -p www && echo '<!doctype html><meta charset="utf-8"><title>Duyen Hoang</title>' > www/index.html
+      - run: npm install
       - run: npm install
       - run: npx cap add ios
       - run: npx cap sync ios
