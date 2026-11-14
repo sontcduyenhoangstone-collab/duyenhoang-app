@@ -1,0 +1,10 @@
+BUILD APK + IPA BANG GITHUB (mien phi)
+1. Tao tai khoan github.com, tao repository moi (Private), ten tuy y, vi du: duyenhoang-app.
+2. Bam "Add file > Upload files", keo THA TOAN BO noi dung thu muc nay (gom thu muc .github, www, package.json, capacitor.config.json) vao, bam Commit.
+   (Thu muc .github la thu muc an - neu khong keo duoc, dung nut "Create new file" va dan noi dung build.yml voi ten .github/workflows/build.yml)
+3. Vao tab "Actions" > "Build app" > "Run workflow". Cho khoang 5-15 phut.
+4. Xong, bam vao lan chay, keo xuong muc "Artifacts":
+   - duyenhoang-apk  -> giai nen, duoc app-debug.apk. Gui cho nhan vien Android, cai dat (cho phep "nguon khong xac dinh").
+   - duyenhoang-ipa  -> duyenhoang-unsigned.ipa (CHUA KY). iPhone khong cai truc tiep duoc, phai ky bang Sideloadly/AltStore (Apple ID mien phi, het han 7 ngay) hoac Apple Developer 99 USD/nam.
+5. App chi la "vo" mo https://www.congtyduyenhoang.com , nen cap nhat phan mem tren may chu thi app tu cap nhat, khong can build lai.
+Neu doi ten mien: sua server.url trong capacitor.config.json roi build lai.
